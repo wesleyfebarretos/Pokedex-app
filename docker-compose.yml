@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     container_name: pokedex-frontend
-    build: .
+    build: ./frontend-DEX
     ports:
       - '80:80'
     depends_on:
@@ -12,7 +12,7 @@ services:
   
   backend:
     container_name: pokedex-backend
-    build: ../backend-DEX
+    build: ./backend-DEX
     ports:
       - 8080:3000
     depends_on:
@@ -28,7 +28,7 @@ services:
     image: postgres
     restart: unless-stopped
     volumes:
-        - ../backend-DEX/db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+        - ./backend-DEX/db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
         LC_ALL: C.UTF-8
         POSTGRES_USER: "${TYPEORM_USERNAME}"
