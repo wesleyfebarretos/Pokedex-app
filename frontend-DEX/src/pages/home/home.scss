@@ -1,0 +1,17 @@
+#card-place {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 80vw;
+  gap: 2rem;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  top: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

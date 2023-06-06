@@ -1,0 +1,65 @@
+#card-place-link {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.previous-next-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-container {
+  display: relative;
+}
+
+.previous,
+.next {
+  position: absolute;
+  border-bottom: 50px solid gold;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 45%;
+}
+
+.previous {
+  left: 30%;
+  transform: rotate(-90deg);
+  animation: float 1s linear infinite;
+}
+
+.next {
+  right: 30%;
+  transform: rotate(90deg);
+  animation: float 1s linear infinite;
+}
+
+.previous:active {
+  border-bottom: 47px solid gold;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+}
+
+.next:active {
+  border-bottom: 47px solid gold;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    top: 44.5%;
+  }
+
+  50% {
+    top: 45.5%;
+  }
+}

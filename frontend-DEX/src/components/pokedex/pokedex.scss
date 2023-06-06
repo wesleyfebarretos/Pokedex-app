@@ -1,0 +1,267 @@
+#dex-container {
+  position: fixed;
+  top: 20px;
+  border-radius: 15px;
+  background: linear-gradient(80deg, darkred, red, pink);
+  border: 3px solid black;
+  z-index: 99;
+}
+.dex-header,
+.dex-middle {
+  width: 400px;
+  height: 150px;
+  position: relative;
+}
+
+.dex-middle {
+  height: 250px;
+  display: none;
+}
+
+.dex-aside {
+  display: none;
+  position: absolute;
+  width: 9%;
+  height: 66.5%;
+  top: 33.5%;
+  left: 91%;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.greater-ball {
+  position: absolute;
+  width: 23%;
+  height: 60%;
+  border-radius: 50%;
+  border: 4px solid white;
+  outline: 1px solid black;
+  top: 15%;
+  left: 5%;
+}
+
+.greater-ball:hover {
+  cursor: pointer;
+}
+
+.greater-ball:active {
+  width: 22%;
+  height: 59%;
+}
+
+.greater-ball-inside:active {
+  box-shadow: inset 0 0 20px 2px black;
+}
+
+.greater-ball-inside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #35c2f5;
+  border: 1px solid black;
+}
+
+.greater-ball-light {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: #b1ffff;
+  top: 13%;
+  left: 15%;
+}
+
+.greater-ball-inside-shadow {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  justify-content: center;
+  top: -1%;
+  left: 3%;
+  border-radius: 100%;
+  border-bottom: 10px solid #125a9a;
+}
+
+.three-small-balls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: 40%;
+  left: 32%;
+  top: 8%;
+}
+
+.small-red-ball,
+.small-yellow-ball,
+.small-green-ball {
+  width: 20%;
+  height: 39%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.small-red-ball {
+  background: red;
+}
+
+.small-yellow-ball {
+  background: #ffd700;
+}
+
+.small-green-ball {
+  background: green;
+}
+
+.small-red-ball-inside,
+.small-yellow-ball-inside,
+.small-green-ball-inside {
+  background: white;
+  position: relative;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  top: 15%;
+  left: 12%;
+}
+
+.logo-dex {
+  position: absolute;
+  height: 50%;
+  width: 40%;
+  top: 30%;
+  left: 40%;
+}
+
+.middle-normal-line,
+.middle-deg-line,
+.middle-normal-line-2 {
+  position: absolute;
+  height: 1%;
+  border-bottom: 4px solid black;
+}
+
+.middle-normal-line {
+  width: 34%;
+  top: 5%;
+}
+
+.middle-deg-line {
+  width: 15%;
+  left: 32.5%;
+  top: -1%;
+  transform: rotate(-33deg);
+  border-radius: 0 0 10% 20%;
+}
+
+.middle-normal-line-2 {
+  width: 54%;
+  left: 46%;
+  top: -7.2%;
+  border-radius: 10% 0 0 0;
+}
+
+.line-light-1,
+.line-light-2 {
+  transform: rotate(48deg);
+  position: absolute;
+  opacity: 0.3;
+}
+
+.line-light-1 {
+  top: -19.5%;
+  left: 22.5%;
+  width: 6%;
+  height: 101%;
+  box-shadow: inset 0 0 100px 11px whitesmoke, 0 0 20px 11px whitesmoke, 0 0 35px 11px whitesmoke;
+}
+
+.line-light-2 {
+  left: 43%;
+  top: -25%;
+  width: 10%;
+  height: 141%;
+  box-shadow: inset 0 0 100px 19.9px whitesmoke, 0 0 25px 15px whitesmoke, 0 0 40px 15px whitesmoke;
+}
+
+.line-shadow {
+  height: 3%;
+  width: 28%;
+  border: 1px solid black;
+  top: 80%;
+  left: 34%;
+  border-radius: 33%;
+  box-shadow: inset 0 0 7px black;
+  position: absolute;
+}
+
+.triangle {
+  position: absolute;
+  border-bottom: 30px solid gold;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(90deg);
+  top: 35%;
+  left: 0.5%;
+}
+
+.aside-line,
+.aside-line2 {
+  border: 1px solid black;
+  width: 100%;
+  height: 2%;
+  box-shadow: inset 0 0 3px black;
+  position: absolute;
+}
+
+.aside-line {
+  top: 10%;
+}
+
+.aside-line2 {
+  bottom: 10%;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes desappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.dex-appear {
+  animation: appear 0.5s linear;
+}
+
+.dex-desappear {
+  animation: desappear 1s linear;
+}
+
+.search-bar input {
+  position: absolute;
+  bottom: 2%;
+  left: 22%;
+  padding: 1%;
+  border-radius: 10%;
+  border: 2px solid black;
+  font-size: 14px;
+  font-family: "Cinzel", serif;
+  font-weight: 500px;
+  color: black;
+  background: linear-gradient(red, pink 60%);
+  text-align: center;
+}

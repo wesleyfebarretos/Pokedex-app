@@ -1,0 +1,91 @@
+.card {
+  width: 200px;
+  height: 260px;
+  border-radius: 1rem;
+  border: lightgray 1px solid;
+  transform-style: preserve-3d;
+  transition: all ease-in 0.5s;
+  box-shadow: 10px 10px 97px 15px rgba(250, 250, 250, 0.4);
+  -webkit-box-shadow: 10px 10px 97px 15px rgba(250, 250, 250, 0.4);
+  -moz-box-shadow: 10px 10px 97px 15px rgba(250, 250, 250, 0.4);
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.back-card {
+  transform: rotateY(180deg);
+}
+
+.link-container {
+  text-decoration: none;
+}
+
+.front-card,
+.back-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.id-pokemon {
+  background: whitesmoke;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+	color: gray;
+}
+
+.front-card h2,
+.back-card h2 {
+  text-align: center;
+  margin: 10px auto;
+  font-family: "Cinzel", serif;
+  color: rgb(80, 80, 80);
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  height: 45%;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.img-light {
+  position: absolute;
+  height: 50%;
+  width: 63%;
+  border-radius: 50%;
+  background: white;
+  box-shadow: inset 0 0 30px 10px black;
+  top: 15%;
+}
+
+.card-image img {
+  position: absolute;
+  top: 12%;
+  height: 52%;
+  width: 52%;
+  z-index: 99;
+}
+
+.types-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-type,
+.card-second-type {
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 4px;
+  font-size: 16px;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+	color: black;
+}

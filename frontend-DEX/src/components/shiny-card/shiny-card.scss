@@ -1,0 +1,42 @@
+.shiny-card {
+  width: 20%;
+  height: 70%;
+  border-radius: 1rem;
+  border: lightgray 1px solid;
+  transform-style: preserve-3d;
+  transition: all ease-in 0.5s;
+  box-shadow: 10px 10px 97px 15px rgba(250, 250, 250, 0.4);
+  -webkit-box-shadow: 10px 10px 97px 15px rgba(250, 250, 250, 0.4);
+  -moz-box-shadow: 10px 10px 97px 15px rgba(250, 250, 250, 0.4);
+}
+
+.card-id {
+  background: whitesmoke;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-name {
+  text-align: center;
+  margin: 50px auto auto auto;
+  color: white;
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+}
+
+.card-img-front {
+  width: 60%;
+  height: 35%;
+}
+
+.card-img-back {
+  width: 60%;
+  height: 35%;
+}
+
+.img-container-front,
+.img-container-back {
+  display: flex;
+  justify-content: center;
+}
