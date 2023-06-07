@@ -15,7 +15,7 @@ This is a full stack project, from database operation to the API linked to the f
 - You can search for pokemons by type and name, or both together.
 - If you no longer want to filter by type or name, you can reset it by clicking the "Reset" button.
 - Want to see more pokemons ? Just scroll down.
-- By clicking on the pokedex glass ball, the search menu will open.
+- By clicking on the pokedex glass ball, the search menu will open, if you click again it will close.
 - When you pass the mouse over the cards, they rotate and show another part of the card.
 - By clicking on one of the cards, you are redirected to a page that shows the shiny version of the same pokemon you clicked on, and there you can continue browsing and see more shiny versions.
 
